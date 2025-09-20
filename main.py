@@ -2,7 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Load environment variables from .env fil
 load_dotenv()
 
 # GitHub Personal Access Token from .env
