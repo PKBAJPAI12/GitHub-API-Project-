@@ -17,7 +17,9 @@ def get_changed_files(owner, repo, pull_number):
         "Authorization": f"Bearer {GITHUB_TOKEN}",
         "Accept": "application/vnd.github.v3+json"
     }
-
+    
+    print("cde")
+  
     response = requests.get(url, headers=headers)
 
     # Check for successful response
