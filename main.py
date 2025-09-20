@@ -43,6 +43,9 @@ if __name__ == "__main__":
 
     changed_files = get_changed_files(owner, repo, pull_number)
 
+    print("efg")
+ print("mfs")
+
     if changed_files:
         print("Files changed in PR:")
         for filename in changed_files:
