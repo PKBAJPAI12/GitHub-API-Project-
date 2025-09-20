@@ -19,10 +19,10 @@ def get_changed_files(owner, repo, pull_number):
     }
     
     print("abc")
-  
     response = requests.get(url, headers=headers)
 
     # Check for successful response
+print("mfs")
     if response.status_code == 200:
         files = response.json()
         changed_files = [file["filename"] for file in files]
