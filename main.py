@@ -18,7 +18,11 @@ def get_changed_files(owner, repo, pull_number):
         "Accept": "application/vnd.github.v3+json"
     }
     
+<<<<<<< HEAD
     print("ge")
+=======
+    print("abc")
+>>>>>>> d08ce332d0e98b7551ab052e0258fbb04cff13af
   
     response = requests.get(url, headers=headers)
 
