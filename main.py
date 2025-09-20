@@ -31,6 +31,8 @@ print("mfs")
         print(f"Error: {response.status_code}")
         print(response.json())
         return []
+print("efg")
+ print("mfs")
 
 if __name__ == "__main__":
     # Replace with your specific values
