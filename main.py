@@ -2,7 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 
-# Load environment variables from .env file
+# Load environment variables from .env fil
 load_dotenv()
 
 # GitHub Personal Access Token from .env
@@ -18,7 +18,11 @@ def get_changed_files(owner, repo, pull_number):
         "Accept": "application/vnd.github.v3+json"
     }
     
-    print("cde")
+<<<<<<< HEAD
+    print("ge")
+=======
+    print("abc")
+>>>>>>> d08ce332d0e98b7551ab052e0258fbb04cff13af
   
     response = requests.get(url, headers=headers)
 
