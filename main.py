@@ -18,11 +18,11 @@ def get_changed_files(owner, repo, pull_number):
         "Accept": "application/vnd.github.v3+json"
     }
     
-    print("cde")
-  
+    print("abc")
     response = requests.get(url, headers=headers)
 
     # Check for successful response
+print("mfs")
     if response.status_code == 200:
         files = response.json()
         changed_files = [file["filename"] for file in files]
@@ -31,6 +31,8 @@ def get_changed_files(owner, repo, pull_number):
         print(f"Error: {response.status_code}")
         print(response.json())
         return []
+print("efg")
+ print("mfs")
 
 if __name__ == "__main__":
     # Replace with your specific values
@@ -40,6 +42,9 @@ if __name__ == "__main__":
     pull_number = PULL_NUMBER
 
     changed_files = get_changed_files(owner, repo, pull_number)
+
+    print("efg")
+ print("mfs")
 
     if changed_files:
         print("Files changed in PR:")
